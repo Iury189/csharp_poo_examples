@@ -1,6 +1,5 @@
-﻿using System;
+using System;
 using System.Globalization;
-using System.Threading;
 using static System.Console;
 
 namespace abstracao {
@@ -9,7 +8,6 @@ namespace abstracao {
 
         public override void interacao() {
 
-            Thread.CurrentThread.CurrentCulture = new CultureInfo("pt-BR");
             var hora_atual = DateTime.Now;
             WriteLine("\n");
             WriteLine($"Modelo: {this.getModelo()}");
