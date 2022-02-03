@@ -1,6 +1,6 @@
 ﻿using static System.Console;
 
-namespace classe.Properties {
+namespace classe {
 
     public class JoJo {
 
