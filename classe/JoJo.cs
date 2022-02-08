@@ -6,6 +6,7 @@ namespace classe {
 
         private string nome, stand;
         private bool status_stand = false;
+        
         public string getNome() { return nome; }
         public string getStand() { return stand; }
         public bool getStatusStand() { return status_stand; }
