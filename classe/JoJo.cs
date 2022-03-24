@@ -4,48 +4,44 @@ namespace classe {
 
     public class JoJo {
 
-        private string nome, stand;
-        private bool status_stand = false;
+        public string nome { get; set; }
+        public string stand { get; set; }
+        public bool status_stand = false;
         
-        public string getNome() { return nome; }
-        public string getStand() { return stand; }
-        public bool getStatusStand() { return status_stand; }
-        public void setNome(string nome) { this.nome = nome; }
-        public void setStand(string stand) { this.stand = stand; }
-        public void setStatusStand(bool status_stand) { this.status_stand = status_stand; }
-
         public void ativarStand() {
-            if (this.getStatusStand()) {
-                WriteLine($"{this.getStand()} já está invocado.");
+            if (status_stand) {
+                WriteLine($"{stand} já está invocado.");
             }
             else {
-                this.setStatusStand(true);
-                WriteLine($"{this.getStand()} foi invocado.");
+                status_stand = true;
+                WriteLine($"{stand} foi invocado.");
             }
         }
 
         public void desativarStand() {
-            if (this.getStatusStand() == false) {
-                WriteLine($"{this.getStand()} já está oculto.");
+            if (status_stand == false) {
+                WriteLine($"{stand} já está oculto.");
             }
             else {
-                this.setStatusStand(false);
-                WriteLine($"{this.getStand()} foi ocultado.");
+                status_stand = false;
+                WriteLine($"{stand} foi ocultado.");
             }
         }
 
         public void interacao() {
+            
             string resultado;
-            WriteLine($"Nome: {this.getNome()}");
-            WriteLine($"Stand: {this.getStand()}");
-            resultado = this.getStatusStand() ? "Ativo" : "Inativo";
+            WriteLine($"Nome: {nome}");
+            WriteLine($"Stand: {stand}");
+            resultado = status_stand ? "Ativo." : "Inativo.";
             WriteLine($"Status do stand: {resultado}");
-            if (this.getStatusStand()) {
+            if (status_stand) {
                 ativarStand();
             }
             else {
                 desativarStand();
             }
+            
         }
     }
 }
