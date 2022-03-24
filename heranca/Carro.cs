@@ -10,11 +10,11 @@ namespace heranca {
 
             var hora_atual = DateTime.Now;
             WriteLine("\n");
-            WriteLine($"Modelo: {this.getModelo()}");
-            WriteLine($"Marca: {this.getMarca()}");
-            WriteLine($"Cor: {this.getCor()}");
-            WriteLine($"Ano de fabricação: {this.getAno()}");
-            WriteLine($"Valor: {this.getValor().ToString("C", CultureInfo.CreateSpecificCulture("pt-BR"))}");
+            WriteLine($"Modelo: {modelo}");
+            WriteLine($"Marca: {marca}");
+            WriteLine($"Cor: {cor}");
+            WriteLine($"Ano de fabricação: {ano}");
+            WriteLine($"Valor: {valor.ToString("C", CultureInfo.CreateSpecificCulture("pt-BR"))}");
             WriteLine($"Data da compilação: {hora_atual.ToString("dd/MM/yyyy HH:mm:ss")}");
 
         }
