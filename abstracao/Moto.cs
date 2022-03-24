@@ -10,8 +10,8 @@ namespace abstracao {
 
             var hora_atual = DateTime.Now;
             WriteLine("\n");
-            WriteLine($"Modelo: {modelo}");
             WriteLine($"Marca: {marca}");
+            WriteLine($"Modelo: {modelo}");
             WriteLine($"Cor: {cor}");
             WriteLine($"Ano de fabricação: {ano}");
             WriteLine($"Valor: {valor.ToString("C", CultureInfo.CreateSpecificCulture("pt-BR"))}");
