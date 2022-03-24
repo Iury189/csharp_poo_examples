@@ -8,18 +8,19 @@ namespace heranca {
 
             Carro carro = new Carro();
             Write("Digite a marca do carro: ");
-            carro.setMarca(ReadLine());
+            carro.marca = ReadLine();
             Write("Digite o modelo do carro: ");
-            carro.setModelo(ReadLine());
+            carro.modelo = ReadLine();
             Write("Digite a cor do carro: ");
-            carro.setCor(ReadLine());
+            carro.cor = ReadLine();
             Write("Digite o ano de fabricação do carro: ");
             if (!int.TryParse(ReadLine(), out int digite_ano)) return;
-            carro.setAno(digite_ano);
+            carro.ano = digite_ano;
             Write("Digite o valor do carro: ");
             if (!decimal.TryParse(ReadLine(), out decimal digite_valor)) return;
-            carro.setValor(digite_valor);
+            carro.valor = digite_valor;
             carro.interacao();
+            
         }
     }
 }
