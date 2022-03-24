@@ -7,6 +7,7 @@
         public string cor { get; set; }
         public int ano { get; set; }
         public decimal valor { get; set; }
+        
     }
 
 }
