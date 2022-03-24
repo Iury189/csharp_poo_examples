@@ -5,20 +5,22 @@ namespace abstracao {
     class MainClass {
 
         public static void Main(string[] args) {
+            
             Moto moto = new Moto();
             Write("Digite a marca da moto: ");
-            moto.setMarca(ReadLine());
+            moto.marca = ReadLine();
             Write("Digite o modelo da moto: ");
-            moto.setModelo(ReadLine());
+            moto.modelo = ReadLine();
             Write("Digite a cor da moto: ");
-            moto.setCor(ReadLine());
+            moto.cor = ReadLine();
             Write("Digite o ano de fabricação da moto: ");
             if (!int.TryParse(ReadLine(), out int digite_ano)) return;
-            moto.setAno(digite_ano);
+            moto.ano = digite_ano;
             Write("Digite o valor da moto: ");
             if (!decimal.TryParse(ReadLine(), out decimal digite_valor)) return;
-            moto.setValor(digite_valor);
+            moto.valor = digite_valor;
             moto.interacao();
+            
         }
     }
 }
