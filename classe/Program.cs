@@ -14,6 +14,7 @@ namespace classe {
             Write("\n");
             j1.interacao();
             ReadKey();
+            
         }
     }
 }
