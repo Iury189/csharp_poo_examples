@@ -1,7 +1,7 @@
-﻿namespace iinterface {
-
-    class MainClass {
-
+﻿namespace iinterface 
+{
+    class MainClass 
+    {
         public static void Main(string[] args) 
         {
             Garfanhoto garfanhoto = new Garfanhoto();
