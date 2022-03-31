@@ -1,6 +1,7 @@
-﻿namespace iinterface {
-
-    public interface Ipredador {
+﻿namespace iinterface 
+ {
+    public interface Ipredador 
+    {
         void cacar();
     }
 }
