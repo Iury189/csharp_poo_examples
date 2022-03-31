@@ -2,8 +2,8 @@
 
     class MainClass {
 
-        public static void Main(string[] args) {
-
+        public static void Main(string[] args) 
+        {
             Garfanhoto garfanhoto = new Garfanhoto();
             Sapo sapo = new Sapo();
             Aguia aguia = new Aguia();
