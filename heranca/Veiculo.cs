@@ -1,5 +1,5 @@
 ﻿namespace heranca 
- {
+{
     public class Veiculo 
     {
         public string marca { get; set; }
