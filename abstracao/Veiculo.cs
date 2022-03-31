@@ -1,5 +1,5 @@
 ﻿namespace abstracao 
- {
+{
     public abstract class Veiculo 
     {
         public string marca { get; set; }
