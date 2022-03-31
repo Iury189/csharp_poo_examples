@@ -1,11 +1,11 @@
 using static System.Console;
 
-namespace heranca {
-
-    class MainClass {
-
-        public static void Main(string[] args) {
-
+namespace heranca 
+{
+    class MainClass 
+    {
+        public static void Main(string[] args) 
+        {
             Carro carro = new Carro();
             Write("Digite a marca do carro: ");
             carro.marca = ReadLine();
@@ -19,8 +19,7 @@ namespace heranca {
             Write("Digite o valor do carro: ");
             if (!decimal.TryParse(ReadLine(), out decimal digite_valor)) return;
             carro.valor = digite_valor;
-            carro.interacao();
-            
+            carro.interacao();           
         }
     }
 }
