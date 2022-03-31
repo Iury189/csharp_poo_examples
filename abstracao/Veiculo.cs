@@ -1,7 +1,7 @@
-﻿namespace abstracao {
-
-    public abstract class Veiculo {
-
+﻿namespace abstracao 
+ {
+    public abstract class Veiculo 
+    {
         public string marca { get; set; }
         public string modelo { get; set; }
         public string cor { get; set; }
@@ -9,6 +9,5 @@
         public decimal valor { get; set; }
 
         public abstract void interacao();
-
     }
 }
