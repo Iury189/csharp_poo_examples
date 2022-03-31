@@ -36,7 +36,7 @@ namespace classe
 
         public void interacao() 
         {    
-            string resultado;
+            string resultado, resultado_status;
             WriteLine($"Nome: {nome}");
             WriteLine($"Stand: {stand}");
             resultado = status_stand ? "Ativo." : "Inativo.";
