@@ -1,8 +1,7 @@
-﻿namespace polimorfismo {
-
-    public abstract class DevilHunter {
-
+﻿namespace polimorfismo 
+ {
+    public abstract class DevilHunter 
+    {
         public abstract void falar(); 
-
     }
 }
