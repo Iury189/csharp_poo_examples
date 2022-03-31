@@ -1,7 +1,7 @@
-﻿namespace polimorfismo {
-
-    class MainClass {
-
+﻿namespace polimorfismo 
+{
+    class MainClass 
+    {
         public static void Main(string[] args) 
         {
             Dante dante = new Dante();
