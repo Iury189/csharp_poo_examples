@@ -2,8 +2,8 @@
 
     class MainClass {
 
-        public static void Main(string[] args) {
-
+        public static void Main(string[] args) 
+        {
             Dante dante = new Dante();
             Nero nero = new Nero();
             dante.falar();
