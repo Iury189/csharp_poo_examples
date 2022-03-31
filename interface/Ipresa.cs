@@ -1,6 +1,7 @@
-﻿namespace iinterface {
-
-    public interface Ipresa {
+﻿namespace iinterface 
+ {
+    public interface Ipresa 
+    {
         void fugir();
     }
 }
