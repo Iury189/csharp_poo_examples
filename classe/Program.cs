@@ -1,9 +1,9 @@
 using static System.Console;
 
-namespace classe {
-
-    class MainClass {
-
+namespace classe 
+{
+    class MainClass 
+    {
         public static void Main(string[] args)
         {
             JoJo j1 = new JoJo();
