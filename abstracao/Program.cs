@@ -1,11 +1,11 @@
 using static System.Console;
 
-namespace abstracao {
-
-    class MainClass {
-
-        public static void Main(string[] args) {
-            
+namespace abstracao 
+{
+    class MainClass 
+    {
+        public static void Main(string[] args) 
+        {    
             Moto moto = new Moto();
             Write("Digite a marca da moto: ");
             moto.marca = ReadLine();
@@ -19,8 +19,7 @@ namespace abstracao {
             Write("Digite o valor da moto: ");
             if (!decimal.TryParse(ReadLine(), out decimal digite_valor)) return;
             moto.valor = digite_valor;
-            moto.interacao();
-            
+            moto.interacao();   
         }
     }
 }
