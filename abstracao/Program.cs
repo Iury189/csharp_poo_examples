@@ -14,11 +14,9 @@ namespace abstracao
             Write("Digite a cor da moto: ");
             moto.cor = ReadLine();
             Write("Digite o ano de fabricação da moto: ");
-            if (!int.TryParse(ReadLine(), out int digite_ano)) return;
-            moto.ano = digite_ano;
+            moto.ano = int.Parse(ReadLine());
             Write("Digite o valor da moto: ");
-            if (!decimal.TryParse(ReadLine(), out decimal digite_valor)) return;
-            moto.valor = digite_valor;
+            moto.valor = decimal.Parse(ReadLine());
             moto.interacao();   
         }
     }
