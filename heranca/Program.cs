@@ -14,11 +14,9 @@ namespace heranca
             Write("Digite a cor do carro: ");
             carro.cor = ReadLine();
             Write("Digite o ano de fabricação do carro: ");
-            if (!int.TryParse(ReadLine(), out int digite_ano)) return;
-            carro.ano = digite_ano;
+            carro.ano = int.Parse(ReadLine());
             Write("Digite o valor do carro: ");
-            if (!decimal.TryParse(ReadLine(), out decimal digite_valor)) return;
-            carro.valor = digite_valor;
+            carro.valor = decimal.Parse(ReadLine());
             carro.interacao();           
         }
     }
